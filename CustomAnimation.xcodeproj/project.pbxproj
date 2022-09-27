@@ -14,6 +14,7 @@
 		0ED8D2BD28E385CF003E8A6D /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2BC28E385CF003E8A6D /* Bubble.swift */; };
 		0ED8D2C028E3861D003E8A6D /* CocaColaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */; };
 		0ED8D2C228E38A0B003E8A6D /* BubblesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */; };
+		0ED8D2C428E39508003E8A6D /* Extention + Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2C328E39508003E8A6D /* Extention + Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0ED8D2BC28E385CF003E8A6D /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaColaView.swift; sourceTree = "<group>"; };
 		0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesView.swift; sourceTree = "<group>"; };
+		0ED8D2C328E39508003E8A6D /* Extention + Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention + Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		0E00FFBC28E248BC0003EBC3 = {
 			isa = PBXGroup;
 			children = (
+				0ED8D2C328E39508003E8A6D /* Extention + Color.swift */,
 				0E00FFC728E248BC0003EBC3 /* CustomAnimation */,
 				0E00FFC628E248BC0003EBC3 /* Products */,
 			);
@@ -156,6 +159,7 @@
 			files = (
 				0ED8D2C228E38A0B003E8A6D /* BubblesView.swift in Sources */,
 				0ED8D2BD28E385CF003E8A6D /* Bubble.swift in Sources */,
+				0ED8D2C428E39508003E8A6D /* Extention + Color.swift in Sources */,
 				0ED8D2C028E3861D003E8A6D /* CocaColaView.swift in Sources */,
 				0E00FFCB28E248BC0003EBC3 /* ContentView.swift in Sources */,
 				0E00FFC928E248BC0003EBC3 /* CustomAnimationApp.swift in Sources */,

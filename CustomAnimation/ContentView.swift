@@ -19,6 +19,7 @@ struct ContentView: View {
             let size = geometry.size
             
             ZStack {
+                
                 CocaCola(progress: progress, teaHeight: 0.03, offset: startAnimation)
                     .fill(Color("TeaColor"))
                     .opacity(0.9)

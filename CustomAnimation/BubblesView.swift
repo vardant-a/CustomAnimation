@@ -32,7 +32,7 @@ struct BubbleView: View {
     
     var body: some View {
         Circle()
-            .fill(.clear.opacity(opacityBubble))
+            .fill(Color.systemColor.opacity(opacityBubble))
         .frame(width: sizeValue, height: sizeValue)
         .offset(x: valueX, y: valueY)
     }
