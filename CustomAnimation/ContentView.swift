@@ -8,41 +8,64 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Rating()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-struct Rating: View {
     
-    @State var value: Double = 0.5
+    @State private var progress = 0.4
+    @State private var startAnimation: Double = 0
+    
     
     var body: some View {
         
-        VStack {
+        GeometryReader { geometry in
+            let size = geometry.size
             
-            Text("Hello, what is your mood?")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundColor(.indigo)
-                .padding(.top, 20)
-            
-            Spacer(minLength: 0)
-            
-            Slider(value: $value)
-                .padding()
-            
-            Spacer(minLength: 0)
+            ZStack {
+                CocaCola(progress: progress, teaHeight: 0.03, offset: startAnimation)
+                    .fill(Color("TeaColor"))
+                    .opacity(0.9)
+                    .overlay(content: {
+                        ZStack {
+                            BubblesView()
+                        }
+                    })
+                    .mask {
+                        ZStack {
+                            Image(systemName: "cylinder.fill")
+                                .resizable()
+                                .aspectRatio( contentMode: .fit)
+                        }
+                    }
+                
+                Image(systemName: "cylinder")
+                    .resizable()
+                    .renderingMode(.template)
+                    .aspectRatio( contentMode: .fit)
+                    .foregroundColor(Color("GlassСolor"))
+            }
+            .frame(width: size.width, height: size.height)
+            .onAppear {
+                withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
+                    startAnimation = size.width
+                }
+            }
         }
-        .background(
-            (value <= 0.3 ? Color(.red) : (value > 0.3 && value <= 0.7 ? Color(.yellow) : Color(.green)))
-            )
-        .ignoresSafeArea()
+        .padding()
+        .frame(height: 550)
+        
+        HStack {
+            
+            Text("0 l")
+            
+            Slider(value: $progress)
+                .foregroundColor(Color("TeaColor"))
+            
+            Text(" \(progress) l")
+        }
+        .padding()
+    }
+}
+
+struct ContentView_Preview: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

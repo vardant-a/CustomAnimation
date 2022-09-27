@@ -11,6 +11,9 @@
 		0E00FFCB28E248BC0003EBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00FFCA28E248BC0003EBC3 /* ContentView.swift */; };
 		0E00FFCD28E248BD0003EBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E00FFCC28E248BD0003EBC3 /* Assets.xcassets */; };
 		0E00FFD028E248BD0003EBC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E00FFCF28E248BD0003EBC3 /* Preview Assets.xcassets */; };
+		0ED8D2BD28E385CF003E8A6D /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2BC28E385CF003E8A6D /* Bubble.swift */; };
+		0ED8D2C028E3861D003E8A6D /* CocaColaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */; };
+		0ED8D2C228E38A0B003E8A6D /* BubblesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0E00FFCA28E248BC0003EBC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E00FFCC28E248BD0003EBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E00FFCF28E248BD0003EBC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0ED8D2BC28E385CF003E8A6D /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaColaView.swift; sourceTree = "<group>"; };
+		0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,11 @@
 			children = (
 				0E00FFC828E248BC0003EBC3 /* CustomAnimationApp.swift */,
 				0E00FFCA28E248BC0003EBC3 /* ContentView.swift */,
+				0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */,
 				0E00FFCC28E248BD0003EBC3 /* Assets.xcassets */,
+				0ED8D2BE28E385D9003E8A6D /* Models */,
 				0E00FFCE28E248BD0003EBC3 /* Preview Content */,
+				0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */,
 			);
 			path = CustomAnimation;
 			sourceTree = "<group>";
@@ -65,6 +74,14 @@
 				0E00FFCF28E248BD0003EBC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0ED8D2BE28E385D9003E8A6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ED8D2BC28E385CF003E8A6D /* Bubble.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED8D2C228E38A0B003E8A6D /* BubblesView.swift in Sources */,
+				0ED8D2BD28E385CF003E8A6D /* Bubble.swift in Sources */,
+				0ED8D2C028E3861D003E8A6D /* CocaColaView.swift in Sources */,
 				0E00FFCB28E248BC0003EBC3 /* ContentView.swift in Sources */,
 				0E00FFC928E248BC0003EBC3 /* CustomAnimationApp.swift in Sources */,
 			);
