@@ -53,12 +53,12 @@ struct ContentView: View {
         
         HStack {
             
-            Text("0 l")
+            Text("0 liter")
             
-            Slider(value: $progress)
-                .foregroundColor(Color("TeaColor"))
+            Slider(value: $progress, in: 0...0.70)
+                .tint(Color("TeaColor"))
             
-            Text(" \(progress) l")
+            Text(" \(String(format:"%.2f", progress)) liter")
         }
         .padding()
     }

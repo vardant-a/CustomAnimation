@@ -19,16 +19,6 @@ struct BubblesView: View {
                     opacityBubble: dateElement.opacity
                 )
             }
-//            BubbleView(valueX: -30, valueY: 17)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
-//            BubbleView(valueX: -100, valueY: -70)
         }
     }
 }
