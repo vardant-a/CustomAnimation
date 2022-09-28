@@ -30,9 +30,6 @@ struct Bubble: Identifiable {
     }
 }
 
-
-
-
 class DataBubble {
     
     static let shared = DataBubble()

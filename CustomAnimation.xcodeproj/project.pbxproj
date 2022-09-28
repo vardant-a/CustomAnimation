@@ -43,7 +43,6 @@
 		0E00FFBC28E248BC0003EBC3 = {
 			isa = PBXGroup;
 			children = (
-				0ED8D2C328E39508003E8A6D /* Extention + Color.swift */,
 				0E00FFC728E248BC0003EBC3 /* CustomAnimation */,
 				0E00FFC628E248BC0003EBC3 /* Products */,
 			);
@@ -61,12 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				0E00FFC828E248BC0003EBC3 /* CustomAnimationApp.swift */,
-				0E00FFCA28E248BC0003EBC3 /* ContentView.swift */,
-				0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */,
-				0E00FFCC28E248BD0003EBC3 /* Assets.xcassets */,
 				0ED8D2BE28E385D9003E8A6D /* Models */,
+				0E742BC728E4803F00D04391 /* Views */,
+				0E00FFCC28E248BD0003EBC3 /* Assets.xcassets */,
 				0E00FFCE28E248BD0003EBC3 /* Preview Content */,
-				0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */,
 			);
 			path = CustomAnimation;
 			sourceTree = "<group>";
@@ -77,6 +74,33 @@
 				0E00FFCF28E248BD0003EBC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E742BC628E4802600D04391 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0ED8D2C328E39508003E8A6D /* Extention + Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E742BC728E4803F00D04391 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E00FFCA28E248BC0003EBC3 /* ContentView.swift */,
+				0E742BC828E4804F00D04391 /* Items */,
+				0E742BC628E4802600D04391 /* Extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E742BC828E4804F00D04391 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				0ED8D2BF28E3861D003E8A6D /* CocaColaView.swift */,
+				0ED8D2C128E38A0B003E8A6D /* BubblesView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		0ED8D2BE28E385D9003E8A6D /* Models */ = {
